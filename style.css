@@ -382,6 +382,9 @@ footer {
 
 /*SEGUNDA PÁGINA DE HTML - sobreMI-html*/
 
+.body-fondo{
+	background-image: url(img/body-fondo.png);
+}
 .imglp {
 	width: 350px;
 	border-radius: 100px;
@@ -397,13 +400,15 @@ footer {
 	margin-left: 15%;
 	padding-top: 200px;
 	font-size: 100px;
-	color: #1b4353;
+	color: #fdfeff;
 }
 
 .parrafo {
 	margin: 30px;
 	text-align: justify;
 	font-size: 25px;
+	color: #747171;
+	font-weight: bold;
 }
 
 .container2 {
@@ -432,18 +437,26 @@ footer {
 	background-image: url("https://escuelainenka.com/wp-content/uploads/bufete-de-abogados.jpg");
 	background-repeat: none;
 	background-size: cover;
-	height: 300px;
-	opacity: 95%;
+	height: 200px;
+	opacity: 98%;
 }
 
 .titulo-banner {
 	font-size: 100px;
-	color: black;
+	color: rgb(255, 255, 255);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-top: 100px;
+	padding-top: 80px;
 	font-weight: bold;
+	box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.80);
+
+}
+
+.parrafo-banner {
+	font-size: 17px;
+	display: flex;
+	justify-content: center;
 
 }
 	@media only screen and (min-width: 641px)
@@ -464,18 +477,17 @@ footer {
 }
 
 .seccion {
-	margin-top: 100px;
+	margin-top: 200px;
 }
 .seccion2 {
-	margin-top: 100px;
+	margin-top: 200px;
 }
-
 .seccion3 {
-	margin-top: 100px ;
+	margin-top: 200px ;
 }
 
 .seccion4 {
-	margin-top: 100px;
+	margin-top: 200px;
 }
 
 .tituloJubilacion, .tituloEnfermedades, .tituloDespidos, .tituloAccidente {
@@ -512,6 +524,13 @@ justify-content: center;
 
 }
 
+.tituloFormacion {
+margin-top: 200px;
+	display: flex;
+	justify-content: center;
+	font-size: 80px;
+	font-weight: bold;
+}
 
 .parrafo-formacion {
 	display: flex;
@@ -519,3 +538,4 @@ justify-content: center;
 	text-align: justify;
 	margin: 100px;
 }
+
