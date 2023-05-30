@@ -30,6 +30,40 @@ background-image: linear-gradient(43deg, #000000 0%, #363036 46%, #534444 100%);
 position: fixed;
 }
 
+@media screen and (min-width:768px) {
+           .nav-item {
+			display: flex;
+			flex-direction: column;
+            align-items: center;
+
+		   }
+}
+
+img {
+	max-width: 100%;
+}
+
+
+.toggle-menu {
+	width: 40px ;
+	position: absolute;
+	top: 0.5rem;
+	right: 1.5rem;
+	cursor: pointer;
+	
+}
+
+@media screen and (min-width:768px)
+{
+	.toggle-menu {
+		display: none;
+		
+
+	}
+}
+
+
+
 .logo {
 	width: 65px;
 	height: 65px;
@@ -46,7 +80,7 @@ position: fixed;
 ul {
 margin-left: 500px;
 font-size: 15px;
-
+text-transform: uppercase;
 
 
 }
@@ -65,6 +99,16 @@ li {
  	color: blueviolet;
  }
 
+ #icon-menu {
+	width: 50px;
+	height: 50px;
+	position: absolute; 
+	right: 20px;
+	top: 16px;
+	font-size: 20px;
+	background: #fafafa;
+
+ }
 
 /*HERO SECTION O SECTION PRINCIPAL DE LA PAGINA */
 
