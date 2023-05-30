@@ -6,6 +6,8 @@
 
 body {
 	font-family: 'Montserrat-Bold'-ttf, sans-serif;
+		overflow-x: hidden;
+	 }
 }
 
 .body-fondo {
@@ -395,7 +397,7 @@ footer {
 	margin-left: 15%;
 	padding-top: 200px;
 	font-size: 100px;
-	color: #B8B8B3;
+	color: #1b4353;
 }
 
 .parrafo {
@@ -487,4 +489,33 @@ footer {
 .parrafo2 {
 	font-size: 20px;
 color:#1A3647;
+}
+
+
+
+
+
+/*CUARTA PAGINA DE HTML - formacion.html*/
+
+.grid {
+
+margin-top: 100px;
+display: flex;
+justify-content: center;
+}
+
+.g-col-6 {
+	margin-top: 100px;
+	display: flex;
+	justify-content: left;
+	border: 2px solid black;
+
+}
+
+
+.parrafo-formacion {
+	display: flex;
+	justify-content: center;
+	text-align: justify;
+	margin: 100px;
 }
