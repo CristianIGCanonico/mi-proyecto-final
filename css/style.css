@@ -8,7 +8,7 @@ body {
 	font-family: 'Montserrat-Bold'-ttf, sans-serif;
 		overflow-x: hidden;
 	 }
-}
+
 
 .body-fondo {
 	background-image: url("https://fondosmil.com/fondo/72660.jpg");
@@ -427,7 +427,7 @@ footer {
 /*SEGUNDA PÁGINA DE HTML - sobreMI-html*/
 
 .body-fondo{
-	background-image: url(img/body-fondo.png);
+	background-image: url(../img/body-fondo.png);
 }
 .imglp {
 	width: 350px;
@@ -444,7 +444,7 @@ footer {
 	margin-left: 15%;
 	padding-top: 200px;
 	font-size: 100px;
-	color: #fdfeff;
+	color: #21405f;
 }
 
 .parrafo {
