@@ -97,6 +97,7 @@ li {
  
  .nav-link:hover {
  	color: blueviolet;
+	 transform: scale(1.3);
  }
 
  #icon-menu {
