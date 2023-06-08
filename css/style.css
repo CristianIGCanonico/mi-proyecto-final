@@ -180,13 +180,13 @@ li {
 }
 .caja-central{
     margin-top: 10%;
-    width: 80%;
+    width: 50em;
     display: flex;
     flex-direction: row;
     border-radius: 40px;
     box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.85);
     overflow: hidden;
-    height: 90%;
+    height: 40em;
 }
 .caja-cara{
     display: flex;
@@ -211,8 +211,8 @@ li {
 .img {
 	box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.80);
 	border-radius: 150px;
-	width: 300px;
-	height: 300px;
+	width: 12em;
+	height: 12em;
 
 }
 
@@ -242,11 +242,10 @@ padding-bottom: 20px;
 /*Estilos de la galería ----> */
 .galeria-container {
 	display:grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-auto-rows: 350px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat (2, 350px);
 	padding: 60px;
-	grid-gap: 20px;
-
+    display: inline-block;
 
 }
 
@@ -256,17 +255,16 @@ padding-bottom: 20px;
 	object-fit: cover;
 	border-radius: 40px;
 	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.80);
-	opacity: 75%;
+	opacity: 45%;
 }
+
+
 
 .dos {
 	background-color: #18160E;
 }
 .titulo-galeria {
 	height: 90px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
     background-color: #D9AFD9;
 background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
 box-shadow:8px 8px 8px 0 rgba(255, 255, 255, 0.80);
@@ -288,16 +286,14 @@ box-shadow:8px 8px 8px 0 rgba(255, 255, 255, 0.80);
 
 .galeria__item {
 	position: relative;
+	margin: 1em;
+
 }
 
 .galeria__titulo {
 	position: absolute;
-	bottom: 150px;
-	display: flex;
-	justify-content: left;
+	bottom: 4em;
 	color: whitesmoke;
-	background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9));
-	width: 80%;
 	margin: 0;
 	padding: 10px;
 }
@@ -305,8 +301,7 @@ box-shadow:8px 8px 8px 0 rgba(255, 255, 255, 0.80);
 .enlace-servicios {
 	text-decoration: none;
 	color: white;
-    font-size: 24px;
-    letter-spacing: 3px;
+    font-size: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
