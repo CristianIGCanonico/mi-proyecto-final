@@ -45,7 +45,7 @@ img {
 	
 }
 
-@media screen and (min-width:768px)
+@media screen and (max-width:985px)
 {
 	.toggle-menu {
 		display: none;
@@ -499,17 +499,6 @@ footer {
 	justify-content: center;
 
 }
-	@media only screen and (min-width: 641px)
-	.content-backgrounds {
-		display: block;
-		position: relative;
-		background: #fff;
-		-webkit-box-flex: 1;
-		-ms-flex: 1;
-		flex: 1;
-		margin-left: -40px;
-	}
-
 
 
 .todo1 {
@@ -579,3 +568,51 @@ margin-top: 200px;
 	margin: 100px;
 }
 
+
+/* MEDIA QUERYS */
+
+
+/*Para MÓVIL */
+@media only screen (max-width: 575px) 
+{
+	body, header, section, footer {
+		width:auto; 
+	}
+
+	}
+
+	@media only screen (max-width:575px) {
+
+	h1, a {
+		font-size: 8px;
+	}
+}
+
+/* Para ESCRITORIO PEQUEÑO y TABLET */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Para ESCRITORIO GRANDE */
+@media only screen and (min-width:992px) and (max-width:1199px) {
+	
+}
+
+
+
+
+
+@media only screen and (max-width: 641px)
+{
+   
+.content-backgrounds {
+	display: block;
+	position: relative;
+	background: #fff;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	margin-left: -40px;
+}
+
+}
