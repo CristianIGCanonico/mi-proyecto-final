@@ -577,6 +577,7 @@ margin-top: 200px;
 {
 	body, header, section, footer {
 		width:auto; 
+		height:auto
 	}
 
 	}
@@ -595,7 +596,7 @@ margin-top: 200px;
 
 /* Para ESCRITORIO GRANDE */
 @media only screen and (min-width:992px) and (max-width:1199px) {
-	
+
 }
 
 
