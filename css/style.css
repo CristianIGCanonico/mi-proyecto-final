@@ -30,14 +30,6 @@ background-image: linear-gradient(43deg, #000000 0%, #363036 46%, #534444 100%);
 position: fixed;
 }
 
-@media screen and (min-width:768px) {
-           .nav-item {
-			display: flex;
-			flex-direction: column;
-            align-items: center;
-
-		   }
-}
 
 img {
 	max-width: 100%;
@@ -121,7 +113,6 @@ li {
 .carousel-item {
 	width: 100%;
 	height: 90vh;
-	margin-top: 70px;
 
 } /*Contenedor de los 3 carouseles con sus imagenes de fondo, sus h1 y parrafos*/
 
@@ -180,13 +171,13 @@ li {
 }
 .caja-central{
     margin-top: 10%;
-    width: 50em;
+    width: 80%;
     display: flex;
     flex-direction: row;
     border-radius: 40px;
     box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.85);
     overflow: hidden;
-    height: 40em;
+    height: 90%;
 }
 .caja-cara{
     display: flex;
@@ -211,8 +202,8 @@ li {
 .img {
 	box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.80);
 	border-radius: 150px;
-	width: 12em;
-	height: 12em;
+	width: 300px;
+	height: 300px;
 
 }
 
@@ -221,7 +212,7 @@ li {
 	margin-bottom: 30px;
 	margin-top: 30px;
 	font-size: 50px;
-	font-family: roboto-bold.ttf;
+	font-family: roboto-bold-ttf;
 }
 
 .presentacion {
@@ -242,10 +233,10 @@ padding-bottom: 20px;
 /*Estilos de la galería ----> */
 .galeria-container {
 	display:grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat (2, 350px);
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 350px;
 	padding: 60px;
-    display: inline-block;
+    grid-gap: 20px;
 
 }
 
@@ -265,6 +256,9 @@ padding-bottom: 20px;
 }
 .titulo-galeria {
 	height: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
     background-color: #D9AFD9;
 background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
 box-shadow:8px 8px 8px 0 rgba(255, 255, 255, 0.80);
@@ -292,8 +286,12 @@ box-shadow:8px 8px 8px 0 rgba(255, 255, 255, 0.80);
 
 .galeria__titulo {
 	position: absolute;
-	bottom: 4em;
+	bottom: 150px;
+	display: flex;
+	justify-content: left;
 	color: whitesmoke;
+	background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9));
+	width: 80%;
 	margin: 0;
 	padding: 10px;
 }
@@ -301,7 +299,7 @@ box-shadow:8px 8px 8px 0 rgba(255, 255, 255, 0.80);
 .enlace-servicios {
 	text-decoration: none;
 	color: white;
-    font-size: 1em;
+    font-size: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
