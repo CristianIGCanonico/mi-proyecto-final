@@ -7,6 +7,8 @@
 body {
 	font-family: 'Montserrat-Bold'-ttf, sans-serif;
 		overflow-x: hidden;
+		width: 100%;
+		height: 100vh;
 	 }
 
 
@@ -18,45 +20,19 @@ body {
 }
 
 @font-face {
+/*Barra de navegación del menú con su logo y enlaces de listas desordenadas con sus items*/
 	font-family: Montserrat-Bold-ttf; src: url("./fonts/Montserrat-Bold-ttf");
 }
 
-/*Barra de navegación del menú con su logo y enlaces de listas desordenadas con sus items*/
 .navbar {
 	width: 100%;
 	height: 80px;
 	background-color: #000000;
 background-image: linear-gradient(43deg, #000000 0%, #363036 46%, #534444 100%);
 position: fixed;
-}
 
 
-img {
-	max-width: 100%;
-}
-
-
-.toggle-menu {
-	width: 40px ;
-	position: absolute;
-	top: 0.5rem;
-	right: 1.5rem;
-	cursor: pointer;
-	
-}
-
-@media screen and (max-width:985px)
-{
-	.toggle-menu {
-		display: none;
-		
-
-	}
-}
-
-
-
-.logo {
+&__logo {
 	width: 65px;
 	height: 65px;
 	display: flex;
@@ -66,42 +42,41 @@ img {
 	box-shadow: 0 2px 2px 0 rgba(255, 255, 255, 0.80);
 	border: 2px solid white;
 
+        }
+
+     }
+
+
+img {
+	max-width: 100%;
 }
 
 
-ul {
+
+.navbar-nav {
 margin-left: 500px;
 font-size: 15px;
 text-transform: uppercase;
-
-
-}
 
 li {
 	padding-left: 20px;
 	padding-right: 10px;
 	border-left: 1px solid rgb(255, 255, 255);
+
+	a {
+		color: #B8B8B3;
+		list-style-type: none;
+
+		&:hover {
+				color: blueviolet;
+				transform: scale(1.3);
+			}
+		}
+	}
 }
 
-.nav-link {
-	color: #B8B8B3;
-}
- 
- .nav-link:hover {
- 	color: blueviolet;
-	 transform: scale(1.3);
- }
 
- #icon-menu {
-	width: 50px;
-	height: 50px;
-	position: absolute; 
-	right: 20px;
-	top: 16px;
-	font-size: 20px;
-	background: #fafafa;
 
- }
 
 /*HERO SECTION O SECTION PRINCIPAL DE LA PAGINA */
 
@@ -150,16 +125,14 @@ li {
 
 
 
-
-
-
 /*SECCIÓN "UNO" CON TARJETA DE PRESENTACIÒN (FOTO Y TEXTO):*/
 
 .cara{
     border-radius: 500px;
     height: 200px;
 }
-.uno{
+
+.uno  {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -170,8 +143,9 @@ li {
 	margin-top: 0;
 	padding-top: 0;
     /* padding-top: 10%; */
-}
-.caja-central{
+
+
+&__central{
     margin-top: 10%;
     width: 80%;
     display: flex;
@@ -180,17 +154,30 @@ li {
     box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.85);
     overflow: hidden;
     height: 90%;
-}
-.caja-cara{
+
+&__cara{
     display: flex;
     justify-content: center;
      align-items: center;
-    width: 60%;
+    
     background-color: #35277B;
+       
+
+	img {
+			box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.80);
+			border-radius: 150px;
+			width: 14em;
+			
+		}
+	}
+
+               }
+           }
+       
 
 
-}
-.caja-presentacion{
+
+.de__container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,41 +186,32 @@ li {
     color: #303030;
     padding: 40px;
 
-}
+	&__titulo {
+		
+			text-align: center;
+			margin-bottom: 30px;
+			margin-top: 35px;
+			font-size: 50px;
+			font-family: roboto-bold-ttf;
+	}
 
-.img {
-	box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.80);
-	border-radius: 150px;
-	width: 14em;
-	height: 14em;
-
-}
-
-.titulo-caja {
-	text-align: center;
-	margin-bottom: 30px;
-	margin-top: 35px;
-	font-size: 50px;
-	font-family: roboto-bold-ttf;
-}
-
-.presentacion {
-	font-size: 15px;
+			.de__presentacion {
+				font-size: 15px;
 	font-family: sans-serif;
 	font-style: italic;
 	text-align: justify;
-padding-left: 30px;
-padding-right: 30px;
-padding-bottom: 15px;
-}
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;    
+			}
+		}
+	
 
-
-
-/*SECCIÓN "DOS" CON GALERÍA DE IMAGENES Y SERVICIOS*/
+		/*SECCIÓN "DOS" CON GALERÍA DE IMAGENES Y SERVICIOS*/
 
 
 /*Estilos de la galería ----> */
-.galeria-container {
+.galeria__container {
 	display:grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 350px;
@@ -256,7 +234,7 @@ padding-bottom: 15px;
 .dos {
 	background-color: #18160E;
 }
-.titulo-galeria {
+.titulo__galeria {
 	height: 90px;
 	display: flex;
 	justify-content: center;
@@ -305,6 +283,8 @@ box-shadow:8px 8px 8px 0 rgba(255, 255, 255, 0.80);
     display: flex;
     justify-content: center;
     align-items: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
 }
 
 
@@ -318,55 +298,54 @@ box-shadow:8px 8px 8px 0 rgba(255, 255, 255, 0.80);
 /* SECCIÓN "TRES" con mapa de google maps*/
 
 
-.tres {
+.mapa__container {
 	margin-top: 150px;
 }
+	.mapa__titulo {
+		height: 90px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #D9AFD9;
+	background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+	box-shadow:8px 8px 8px 0 rgba(255, 255, 255, 0.80);
+	}
 
-.mapa-donde {
+.mapa__donde {
 	display: inline-block;
 	border: 3px solid black;
 	border-radius: 20px;
 	width: 50%;
 	height: 50%;
-	margin-top: 50px;
-	margin-left: 50px;
+	margin-top: 2.3em;
+	margin-left: 20em;
 	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.80);
           
+
+	&__iframe {
+		border-radius: 20px;
+	}
 }
 
 
-iframe {
-	border-radius: 20px;
-}
 
+.caja__dir {
 
-.titulo-mapa {
-	height: 90px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    background-color: #D9AFD9;
-background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
-box-shadow:8px 8px 8px 0 rgba(255, 255, 255, 0.80);
-}
-
-
-.caja-direccion {
-	display: inline-block;
-	border: 3px solid black;
-
+.caja__direccion {
+	width: 70%;
+	font-size: 32px;
+	font-family: 'Times New Roman', Times, serif;
+	color: #35277B;
+    margin-top: 60px;
+	margin-left: 250px;
 	
-}
+          }
+            }
 
 
 
 
-
-
-
-
-
-/* FOOTER o PIE DE PÁGINA con iconos de contacto a redes sociales y sus respectivos enlaces */
+			/* FOOTER o PIE DE PÁGINA con iconos de contacto a redes sociales y sus respectivos enlaces */
 footer {
     background-color: #1A3647;
     display: flex;
@@ -374,9 +353,9 @@ footer {
     justify-content: flex-start;
     align-items: center;
     color: navajowhite;
-    height: 100%;
+    height: 80%;
     margin-top: 100px;
-}
+
 
 
 .titulo-footer {
@@ -418,6 +397,8 @@ footer {
 	font-size: 20px;
 	font-family: 'Times New Roman', Times, serif;
 }
+}
+
 
 
 /*SEGUNDA PÁGINA DE HTML - sobreMI-html*/
@@ -471,149 +452,3 @@ footer {
 
 
 
-
-/*TERCERA PÁGINA DE HTML - servicios.html*/
-.container3 {
-	background-image: url("https://escuelainenka.com/wp-content/uploads/bufete-de-abogados.jpg");
-	background-repeat: none;
-	background-size: cover;
-	height: 200px;
-	opacity: 98%;
-}
-
-.titulo-banner {
-	font-size: 100px;
-	color: rgb(255, 255, 255);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-top: 80px;
-	font-weight: bold;
-	box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.80);
-
-}
-
-.parrafo-banner {
-	font-size: 17px;
-	display: flex;
-	justify-content: center;
-
-}
-
-
-.todo1 {
-	float: right;
-}
-
-.seccion {
-	margin-top: 200px;
-}
-.seccion2 {
-	margin-top: 200px;
-}
-.seccion3 {
-	margin-top: 200px ;
-}
-
-.seccion4 {
-	margin-top: 200px;
-}
-
-.tituloJubilacion, .tituloEnfermedades, .tituloDespidos, .tituloAccidente {
-	font-size: 70px;
-	color: #534444;
-
-}
-
-
-
-.parrafo2 {
-	font-size: 20px;
-color:#1A3647;
-}
-
-
-
-
-
-/*CUARTA PAGINA DE HTML - formacion.html*/
-
-.grid {
-
-margin-top: 100px;
-display: flex;
-justify-content: center;
-}
-
-.g-col-6 {
-	margin-top: 100px;
-	display: flex;
-	justify-content: left;
-	border: 2px solid black;
-
-}
-
-.tituloFormacion {
-margin-top: 200px;
-	display: flex;
-	justify-content: center;
-	font-size: 80px;
-	font-weight: bold;
-}
-
-.parrafo-formacion {
-	display: flex;
-	justify-content: center;
-	text-align: justify;
-	margin: 100px;
-}
-
-
-/* MEDIA QUERYS */
-
-
-/*Para MÓVIL */
-@media only screen (max-width: 575px) 
-{
-	body, header, section, footer {
-		width:auto; 
-		height:auto
-	}
-
-	}
-
-	@media only screen (max-width:575px) {
-
-	h1, a {
-		font-size: 8px;
-	}
-}
-
-/* Para ESCRITORIO PEQUEÑO y TABLET */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-
-}
-
-/* Para ESCRITORIO GRANDE */
-@media only screen and (min-width:992px) and (max-width:1199px) {
-
-}
-
-
-
-
-
-@media only screen and (max-width: 641px)
-{
-   
-.content-backgrounds {
-	display: block;
-	position: relative;
-	background: #fff;
-	-webkit-box-flex: 1;
-	-ms-flex: 1;
-	flex: 1;
-	margin-left: -40px;
-}
-
-}
