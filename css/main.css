@@ -55,14 +55,15 @@ img {
   padding-left: 20px;
   padding-right: 10px;
   border-left: 1px solid rgb(255, 255, 255);
+  list-style-type: none !important;
 }
 .navbar-nav li a {
   color: #B8B8B3;
-  list-style-type: none;
+  text-decoration: none;
 }
 .navbar-nav li a:hover {
   color: blueviolet;
-  transform: scale(1.3);
+  font-size: 25px;
 }
 
 /*HERO SECTION O SECTION PRINCIPAL DE LA PAGINA */
@@ -498,19 +499,21 @@ footer .container-copy {
 .h1-carousel {
   animation-name: colores;
   animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 @keyframes colores {
   0% {
     color: white;
   }
-  25% {
+  15% {
     color: orange;
   }
-  50% {
+  25% {
     color: yellow;
   }
-  75% {
+  35% {
     color: red;
   }
 }
