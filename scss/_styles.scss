@@ -570,6 +570,29 @@ color:#1A3647;
 	}
 	
 	
+	/*QUINTA PAGINA DE HTML - COTIZACIÓN */
+.cotizacion__titulo {
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	text-decoration: underline;
+	letter-spacing:5px;
+  }
+	
+	.cotizacion__parrafo {
+	   font-size: 15px;
+  }
+  
+  
+  
+  .formulario {
+	margin: 7%;
+	padding: 7%;
+	background-color: #747171;
+   border-radius: 7%;
+  }
+
+  
 	
 	/* Para ESCRITORIO PEQUEÑO y TABLET */
 	@media only screen and (min-width: 768px) and (max-width: 991px) {
