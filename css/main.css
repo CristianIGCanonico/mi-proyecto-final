@@ -6,6 +6,7 @@
 }
 
 body {
+  background: whitesmoke;
   font-family: "Montserrat-Bold" -ttf, sans-serif;
   overflow-x: hidden;
   width: 100%;
@@ -26,7 +27,7 @@ body {
 }
 .navbar {
   width: 100%;
-  height: 80px;
+  height: 125px;
   background-color: #000000;
   background-image: linear-gradient(43deg, #000000 0%, #363036 46%, #534444 100%);
   position: fixed;
@@ -60,10 +61,11 @@ img {
 .navbar-nav li a {
   color: #B8B8B3;
   text-decoration: none;
+  font-size: 18px;
 }
 .navbar-nav li a:hover {
   color: blueviolet;
-  font-size: 25px;
+
 }
 
 /*HERO SECTION O SECTION PRINCIPAL DE LA PAGINA */
@@ -71,6 +73,7 @@ img {
   filter: brightness(50%);
 } /*Clase contenedora de la imagen del carousel*/
 .carousel-item {
+  margin-top: 10%;
   width: 100%;
   height: 90vh;
 } /*Contenedor de los 3 carouseles con sus imagenes de fondo, sus h1 y parrafos*/
@@ -99,70 +102,58 @@ img {
 }
 
 /*SECCIÓN "UNO" CON TARJETA DE PRESENTACIÒN (FOTO Y TEXTO):*/
-.cara {
+.cara{
   border-radius: 500px;
   height: 200px;
 }
-
-.uno {
+.uno{
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: calc(100vh - 10px);
+  height: 170%;
+  background-color: #303030;
   color: white;
-  margin-bottom: 95px;
-  margin-top: 0;
-  padding-top: 0;
   /* padding-top: 10%; */
 }
-.uno__central {
+.caja-central{
   margin-top: 10%;
-  width: 80%;
+  width: 70%;
   display: flex;
   flex-direction: row;
-  border-radius: 40px;
-  box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.85);
+  border-radius: 30px;
   overflow: hidden;
-  height: 90%;
+  height: 50%;
+  box-shadow: 0 15px 15px 0 rgba(white);
+  
 }
-.uno__central__cara {
+.caja-cara{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #35277B;
+  width: 40%;
+  background-color:#35277B;
 }
-.uno__central__cara img {
-  box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.8);
-  border-radius: 150px;
-  width: 14em;
+.caja-presentacion{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  background-color: #F2F2F2;
+  color: #303030;
+  padding: 10px;
 }
 
-.de__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: #C3C48D;
-  color: #303030;
-  padding: 40px;
+.titulo_sobreMi {
+  padding-left: 25%;
+  padding-top: 4%;
 }
-.de__container__titulo {
-  text-align: center;
-  margin-bottom: 30px;
-  margin-top: 35px;
-  font-size: 50px;
-  font-family: roboto-bold-ttf;
+
+.presentacion {
+  text-align:justify;
+  padding: 2%;
 }
-.de__container .de__presentacion {
-  font-size: 15px;
-  font-family: sans-serif;
-  font-style: italic;
-  text-align: justify;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 15px;
-}
+
 
 /*SECCIÓN "DOS" CON GALERÍA DE IMAGENES Y SERVICIOS*/
 /*Estilos de la galería ----> */
@@ -247,7 +238,7 @@ img {
 }
 
 .mapa__titulo {
-  height: 90px;
+  height: 95px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,14 +248,8 @@ img {
 }
 
 .mapa__donde {
-  display: inline-block;
-  border: 3px solid black;
-  border-radius: 20px;
-  width: 50%;
-  height: 50%;
-  margin-top: 2.3em;
-  margin-left: 20em;
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 150%;
 }
 .mapa__donde__iframe {
   border-radius: 20px;
@@ -274,7 +259,7 @@ img {
   width: 70%;
   font-size: 32px;
   font-family: "Times New Roman", Times, serif;
-  color: #35277B;
+  color: #534444;
   margin-top: 60px;
   margin-left: 250px;
 }
@@ -376,7 +361,7 @@ footer .container-copy {
   background-image: url("https://escuelainenka.com/wp-content/uploads/bufete-de-abogados.jpg");
   background-repeat: none;
   background-size: cover;
-  height: 200px;
+  height: 240px;
   opacity: 98%;
 }
 
@@ -386,13 +371,13 @@ footer .container-copy {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 80px;
+  padding-top: 120px;
   font-weight: bold;
   box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.8);
 }
 
 .parrafo-banner {
-  font-size: 17px;
+  font-size: 30px;
   display: flex;
   justify-content: center;
 }

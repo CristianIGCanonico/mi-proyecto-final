@@ -46,8 +46,7 @@ position: fixed;
      }
 
 
-.img_Cara {
-	object-fit: cover;
+.img_cara {
 	width: 100%;
 	height: 100%;
 }
@@ -136,81 +135,45 @@ li {
     border-radius: 500px;
     height: 200px;
 }
-
-.uno  {
+.uno{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: calc(100vh - 10px);
+    height: calc(100vh - 65px);
+    background-color: #303030;
     color: white;
-    margin-bottom: 95px;
-	margin-top: 0;
-	padding-top: 0;
     /* padding-top: 10%; */
-
-
-&__central{
+}
+.caja-central{
     margin-top: 10%;
-    width: 80%;
+    width: 50%;
     display: flex;
     flex-direction: row;
-    border-radius: 40px;
-    box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.85);
+    border-radius: 20px;
     overflow: hidden;
-    height: 90%;
-
-&__cara{
-    display: flex;
-    justify-content: center;
-     align-items: center;
-    
-    background-color: #35277B;
-       
-
-	img {
-			box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.80);
-			border-radius: 150px;
-			width: 14em;
-			
-		}
-	}
-
-               }
-           }
-       
-
-
-
-.de__container{
+    height: 50%;
+}
+.caja-cara{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    background-color: #C3C48D;
+    width: 40%;
+    background-color: #424242;
+}
+.caja-presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    background-color: #F2F2F2;
     color: #303030;
-    padding: 40px;
+    padding: 10px;
+}
 
-	&__titulo {
-		
-			text-align: center;
-			margin-bottom: 30px;
-			margin-top: 35px;
-			font-size: 50px;
-			font-family: roboto-bold-ttf;
-	}
 
-			.de__presentacion {
-				font-size: 15px;
-	font-family: sans-serif;
-	font-style: italic;
-	text-align: justify;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 15px;    
-			}
-		}
-	
+
+
 
 		/*SECCIÓN "DOS" CON GALERÍA DE IMAGENES Y SERVICIOS*/
 
@@ -238,9 +201,10 @@ li {
 
 .dos {
 	background-color: #18160E;
+	height: auto;
 }
 .titulo__galeria {
-	height: 90px;
+	height: 40px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -317,18 +281,13 @@ box-shadow:8px 8px 8px 0 rgba(255, 255, 255, 0.80);
 	}
 
 .mapa__donde {
-	display: inline-block;
-	border: 3px solid black;
-	border-radius: 20px;
-	width: 50%;
-	height: 50%;
-	margin-top: 2.3em;
-	margin-left: 20em;
-	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.80);
+	width: 100%;
+	height: 100%;
+
           
 
 	&__iframe {
-		border-radius: 20px;
+		width: 100%;
 	}
 }
 
@@ -351,7 +310,9 @@ box-shadow:8px 8px 8px 0 rgba(255, 255, 255, 0.80);
 
 
 			/* FOOTER o PIE DE PÁGINA con iconos de contacto a redes sociales y sus respectivos enlaces */
+/* FOOTER o PIE DE PÁGINA con iconos de contacto a redes sociales y sus respectivos enlaces */
 footer {
+    background-color: #1A3647;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -359,7 +320,7 @@ footer {
     color: navajowhite;
     height: 80%;
     margin-top: 100px;
-
+}
 
 
 .titulo-footer {
@@ -381,6 +342,7 @@ footer {
 	flex-direction: row;
 }
 
+
 .iconos {
 	padding: 10px;
 	margin: 50px;
@@ -391,13 +353,7 @@ footer {
 	border: 3px solid black;
 	border-radius: 15px;
 	background-color: whitesmoke;
-
-	.iconos:hover {
-		transform:scale(1.5);
-	}
-	
 }
-
 
 
 .container-copy {
@@ -406,20 +362,57 @@ footer {
 	font-size: 20px;
 	font-family: 'Times New Roman', Times, serif;
 }
+
+
+/*SEGUNDA PÁGINA DE HTML - sobreMI-html*/
+
+.body-fondo{
+	background-image: url(../img/body-fondo.png);
+}
+.imglp {
+	width: 350px;
+	border-radius: 100px;
+	height: 70%;
+	float: right;
+    margin-left: 30px;
+	margin-bottom: 30px;
+	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.80);
 }
 
 
-.main_footer {
-	width: 100%;
+.titulo-sobremi {
+	margin-left: 15%;
+	padding-top: 200px;
+	font-size: 100px;
+	color: #21405f;
+}
+
+.parrafo {
+	margin: 30px;
+	text-align: justify;
+	font-size: 25px;
+	color: #747171;
+	font-weight: bold;
+}
+
+.container2 {
+	width: 50%;
+}
+
+.enlace-inicio {
+	font-size: 30px;
 	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	cursor: pointer;
+	justify-content: center;
+	text-decoration: none;
+	color: blueviolet;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
 
+.enlace-inicio:hover{
+	color: grey;
 }
-.icon {
-	position: relative;
-}
+
 
 
 
