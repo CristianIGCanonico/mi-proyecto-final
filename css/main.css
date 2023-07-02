@@ -470,32 +470,7 @@ footer .container-copy {
   }
 }
 /* ANIMACIÓN CON @KEYFRAMES */
-.btn {
-  animation-name: move;
-  animation-duration: 4s;
-  animation-delay: 3;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
 
-@keyframes move {
-  0% {
-    transform: translate -15;
-    color: white;
-  }
-  25% {
-    transform: translate 100%;
-    color: red;
-  }
-  50% {
-    transform: translate 100%;
-    color: #35277B;
-  }
-  75% {
-    transform: translate(100%);
-    color: yellow;
-  }
-}
 .h1-carousel {
   animation-name: colores;
   animation-duration: 4s;

@@ -46,8 +46,10 @@ position: fixed;
      }
 
 
-img {
-	max-width: 100%;
+.img_Cara {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
 }
 
 
@@ -350,7 +352,6 @@ box-shadow:8px 8px 8px 0 rgba(255, 255, 255, 0.80);
 
 			/* FOOTER o PIE DE PÁGINA con iconos de contacto a redes sociales y sus respectivos enlaces */
 footer {
-    background-color: #1A3647;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -380,7 +381,6 @@ footer {
 	flex-direction: row;
 }
 
-
 .iconos {
 	padding: 10px;
 	margin: 50px;
@@ -391,7 +391,13 @@ footer {
 	border: 3px solid black;
 	border-radius: 15px;
 	background-color: whitesmoke;
+
+	.iconos:hover {
+		transform:scale(1.5);
+	}
+	
 }
+
 
 
 .container-copy {
@@ -400,6 +406,19 @@ footer {
 	font-size: 20px;
 	font-family: 'Times New Roman', Times, serif;
 }
+}
+
+
+.main_footer {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	cursor: pointer;
+
+}
+.icon {
+	position: relative;
 }
 
 
@@ -625,7 +644,7 @@ color:#1A3647;
 
 
 
-navbar__logo {
+&__logo {
 	animation-duration: 10s;
 	animation-name: aparece;
 	animation-iteration-count: infinite;
