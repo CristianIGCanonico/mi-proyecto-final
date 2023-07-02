@@ -659,3 +659,12 @@ color:#1A3647;
 
 }
 
+
+
+&__logo {
+	animation-duration: 10s;
+	animation-name: aparece;
+	animation-iteration-count: infinite;
+}
+
+@keyframes aparece {
